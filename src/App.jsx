@@ -4,17 +4,17 @@ import backgroundImage from "./images/Fittsmain.png"
 import backgroundImageMobile from "./images/FittsmainMobile.png"
 import StickyAppBar from './components/StickyAppBar';
 import CenteredRotatingImage from './components/centerRotatingImage.jsx';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import SpotifyPlaylist from './components/spotifyplaylist.jsx';
 
 
 function App() {
-  let accessToken = ""
+  const [accessToken, setAccessToken] = useState(null);
   useEffect(() => {
     fetch('/.netlify/functions/spotify-token')
     .then(response => response.json())
     .then(data => {
-         accessToken = data.accessToken;
+      setAccessToken(data.accessToken);
         // Now use the accessToken to make Spotify API calls
     })
     .catch(error => console.error('Error fetching access token:', error));

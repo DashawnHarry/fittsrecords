@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Link, Box } from '@mui/material';
+import { AppBar, Toolbar,  Link, Box } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSnapchatGhost } from '@fortawesome/free-brands-svg-icons';

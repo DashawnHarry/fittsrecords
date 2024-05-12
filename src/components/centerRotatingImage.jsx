@@ -16,7 +16,7 @@ function CenteredRotatingImage() {
                 to: { transform: 'translate(-50%, -50%) rotate(360deg)' }
             }
         }}>
-            <img src={imageSrc} alt="Rotating" style={{ maxWidth: '12%', maxHeight: '100vh' }} />
+            <img src={imageSrc} alt="Rotating" style={{ maxWidth: '15%', maxHeight: '100vh' }} />
         </Box>
     );
 }

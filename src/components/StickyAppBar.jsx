@@ -15,9 +15,6 @@ function StickyAppBar() {
                     overflow: 'hidden',     
                 }}>
                     <Typography
-                        
-                        
-
                         sx={{
                             whiteSpace: 'nowrap',
                             animation: 'marquee 80s linear infinite',

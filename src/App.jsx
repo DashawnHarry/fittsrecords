@@ -14,7 +14,7 @@ function App() {
     fetch('/.netlify/functions/spotify-token')
     .then(response => response.json())
     .then(data => {
-        const accessToken = data.accessToken;
+         accessToken = data.accessToken;
         // Now use the accessToken to make Spotify API calls
     })
     .catch(error => console.error('Error fetching access token:', error));

@@ -9,7 +9,7 @@ import SpotifyPlaylist from './components/spotifyplaylist.jsx';
 
 
 function App() {
-  const accessToken = ""
+  let accessToken = ""
   useEffect(() => {
     fetch('/.netlify/functions/spotify-token')
     .then(response => response.json())

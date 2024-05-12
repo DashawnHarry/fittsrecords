@@ -1,6 +1,5 @@
-const fetch = require('node-fetch');
-
 exports.handler = async function(event, context) {
+    const fetch = (await import('node-fetch')).default;
     const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
     const CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
 

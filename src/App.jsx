@@ -15,6 +15,7 @@ function App() {
     .then(response => response.json())
     .then(data => {
       setAccessToken(data.accessToken);
+      console.log(data.accessToken, "hit")
         // Now use the accessToken to make Spotify API calls
     })
     .catch(error => console.error('Error fetching access token:', error));

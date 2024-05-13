@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Box
-      overflow={"hidden"}
+      overflow={"visible"}
       boxSizing={"border-box"}
       textAlign={"center"}
       sx={{
@@ -32,30 +32,32 @@ function App() {
         backgroundColor: "white",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        zIndex: 0,
       }}
     >
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
       </style>
+      <StickyAppBar />
+        <iframe
+          style={{
+            position: "sticky",
+            
+            marginLeft: { xs: "15%", md: "50%" },
+            zIndex: 3,
+            top: "-980px",
+          }}
+          title="playlist"
+          src="https://open.spotify.com/embed/playlist/4WLfsiUDoJH0s6yQUiGh8b?utm_source=generator&theme=0"
+          width="270px"
+          height="152px"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       <HoverBoxes />
-        <StickyAppBar />
-        <Box sx={{ marginLeft: "35%", marginRight: "35%" }}>
-          <iframe
-            style={{ borderRadius: "12px" }}
-            title="playlist"
-            allowFullScreen
-            src="https://open.spotify.com/embed/playlist/4WLfsiUDoJH0s6yQUiGh8b?utm_source=generator&theme=0"
-            width="100%"
-            height="152"
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
-        </Box>
-        <SocialMediaToolbar socialMediaHandles={socialMediaHandles} />
-        <CenteredRotatingImage />
+      <SocialMediaToolbar socialMediaHandles={socialMediaHandles} />
+      <CenteredRotatingImage />
     </Box>
   );
 }

@@ -10,11 +10,12 @@ function CenteredRotatingImage() {
             left: '50%',
             transform: 'translate(-50%, -50%)', // Center the image
             animation: 'rotate 20s linear infinite', // Rotate infinitely
-            width: { xs: '300%', md: '130%' }, // Responsive width: 5% on xs, 15% on md and up
+            width: { xs: '160%', md: '130%' }, // Responsive width: 5% on xs, 15% on md and up
             '@keyframes rotate': {
                 from: { transform: 'translate(-50%, -50%) rotate(0deg)' },
                 to: { transform: 'translate(-50%, -50%) rotate(360deg)' }
-            }
+            },
+            zIndex: 2
         }}>
             <img src={imageSrc} alt="Rotating" style={{ maxWidth: '15%', maxHeight: '100vh' }} />
         </Box>

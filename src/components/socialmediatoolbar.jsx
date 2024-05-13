@@ -35,7 +35,7 @@ export function SocialMediaToolbar({ socialMediaHandles }) {
     };
   
     return (
-      <AppBar position="fixed"  sx={{ top: 'auto', bottom: 0 }}>
+      <AppBar position="fixed"  sx={{ top: 'auto', bottom: 0 , zIndex: 3 }}>
         <Toolbar>
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'space-evenly' }}>
             {socialMediaHandles.slice(0, 4).map((handle, index) => (

@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/overpass-extrabold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

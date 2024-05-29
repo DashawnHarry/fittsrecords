@@ -4,6 +4,7 @@ import StickyAppBar from "./components/StickyAppBar";
 import HoverBoxes from "./components/HoverBoxes.jsx";
 import CenteredRotatingImage from "./components/centerRotatingImage.jsx";
 import { SocialMediaToolbar } from "./components/socialmediatoolbar.jsx";
+import About from "./components/About.jsx";
 
 function App() {
   const socialMediaHandles = [
@@ -21,6 +22,8 @@ function App() {
   ];
 
   return (
+    <>
+    <Box sx={{ display: 'flex', flexDirection: 'row', width: '100vw', height:'100vh' }}>
     <Box
       overflow={"visible"}
       boxSizing={"border-box"}
@@ -55,10 +58,15 @@ function App() {
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      <HoverBoxes />
       <SocialMediaToolbar socialMediaHandles={socialMediaHandles} />
       <CenteredRotatingImage />
+    <HoverBoxes />
     </Box>
+    </Box>
+    <Box>
+      <About/>
+    </Box>
+    </>
   );
 }
 

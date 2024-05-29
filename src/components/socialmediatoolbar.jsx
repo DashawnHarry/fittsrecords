@@ -39,14 +39,14 @@ export function SocialMediaToolbar({ socialMediaHandles }) {
         <Toolbar>
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'space-evenly' }}>
             {socialMediaHandles.slice(0, 4).map((handle, index) => (
-              <Link key={index} href={handle.url} color="inherit" target="_blank">
+              <Link key={index} href={handle.platform === 'email' ? `mailto:${handle.url}` : handle.url} color="inherit" target="_blank">
                 {getIcon(handle.platform)}
               </Link>
             ))}
           </Box>
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'space-evenly' }}>
             {socialMediaHandles.slice(4, 8).map((handle, index) => (
-              <Link key={index} href={handle.url} color="inherit" target="_blank">
+              <Link key={index} href={handle.platform === 'email' ? `mailto:${handle.url}` : handle.url} color="inherit" target="_blank">
                 {getIcon(handle.platform)}
               </Link>
             ))}

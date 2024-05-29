@@ -6,14 +6,14 @@ import { Box } from "@mui/system";
 
 function StickyAppBar() {
   const textArray = [
-    "Fitts Records",
-    "Fitts Records",
-    "Fitts Records",
-    "Fitts Records",
-    "Fitts Records",
-    "Fitts Records",
-    "Fitts Records",
-    "Fitts Records",
+    "FITTS RECORDS",
+    "FITTS RECORDS",
+    "FITTS RECORDS",
+    "FITTS RECORDS",
+    "FITTS RECORDS",
+    "FITTS RECORDS",
+    "FITTS RECORDS",
+    "FITTS RECORDS",
   ];
   return (
     <AppBar
@@ -38,11 +38,12 @@ function StickyAppBar() {
               whiteSpace: "nowrap",
               animation: "marquee 80s linear infinite",
               color: "blue",
-              fontFamily: "Montserrat",
-              fontSize: "100px",
+              fontFamily: "Overpass",
+              fontSize: "110px",
               fontStyle: "italic",
               fontWeight: 800, // Black outline
-              textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
+              textShadow:"3px 3px 0 #c7c7c7, -1px -1px 0 #c7c7c7, 1px -1px 0 #c7c7c7, -1px 1px 0 #c7c7c7, 1px 1px 0 #c7c7c7",
+              WebkitTextStroke: "1px black",
               "@keyframes marquee": {
                 "0%": { transform: "translateX(100%)" },
                 "100%": { transform: "translateX(-100%)" },
